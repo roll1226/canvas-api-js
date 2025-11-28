@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>透過PNG クリック判定</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        padding: 24px;
+      }
+      img {
+        display: block;
+        max-width: 15%;
+        height: auto;
+        cursor: default;
+        user-select: none;
+      }
+      img:nth-child(even) {
+        margin-bottom: 20%;
+      }
+      .img-wrapper {
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- imgsディレクトリに入っているranger_xxxという名前の画像を横並びになるようにしてください -->
+    <div class="img-wrapper">
+      <img
+        src="./imgs/ranger_blue.png"
+        alt="Ranger Blue"
+        data-href="https://example.com/blue"
+      />
+      <img
+        src="./imgs/ranger_yellow.png"
+        alt="Ranger Yellow"
+        data-href="https://example.com/yellow"
+      />
+      <img
+        src="./imgs/ranger_red.png"
+        alt="Ranger Red"
+        data-href="https://example.com/red"
+      />
+      <img
+        src="./imgs/ranger_green.png"
+        alt="Ranger Green"
+        data-href="https://example.com/green"
+      />
+      <img
+        src="./imgs/ranger_pink.png"
+        alt="Ranger Pink"
+        data-href="https://example.com/pink"
+      />
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
